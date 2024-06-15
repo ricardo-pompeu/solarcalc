@@ -1,0 +1,213 @@
+:root {
+    --dark-bg: #1E1E2E;
+    --dark-fg: #D9E0EE;
+    --dark-primary: #F5E0DC;
+    --dark-secondary: #F28FAD;
+    --dark-accent: #FAB387;
+    
+    --light-bg: #F4F4F8;
+    --light-fg: #1E1E2E; /* Adjusted to a darker color for readability */
+    --light-primary: #DF8E8E;
+    --light-secondary: #94E2D5;
+    --light-accent: #F9E2AF;
+
+    --header-bg: #2E2E3E;
+    --footer-bg: #2E2E3E;
+    --button-bg: #3E3E5E;
+}
+
+body {
+    font-family: sans;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode {
+    background-color: var(--dark-bg);
+    color: var(--dark-fg);
+}
+
+.light-mode {
+    background-color: var(--light-bg);
+    color: var(--light-fg);
+}
+
+header {
+    background-color: var(--header-bg);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    
+    
+    
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a,
+header nav ul li button {
+    color: inherit;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+header nav ul li button {
+    background-color: var(--button-bg);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+header nav ul li a:hover,
+header nav ul li button:hover {
+    background-color: var(--dark-accent);
+    color: var(--dark-bg);
+}
+
+.intro, #sobre, #documentacao {
+    padding: 20px;
+    text-align: center;
+}
+
+.intro h1, #sobre, h2, #documentacao h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.intro p, #sobre p, #documentacao p {
+    margin: 5px 0;
+}
+
+.intro-img, .docs-img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+section {
+    padding: 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+.app-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.app {
+    background-color: var(--header-bg);
+    padding: 15px;
+    width: 180px;
+    text-align: center;
+    border-radius: 8px;
+    margin: 15px;
+}
+
+.app:hover {
+    margin-top: -3px !important;
+    background-color: var(--header-bg);
+    padding: 15px;
+    width: 180px;
+    text-align: center;
+    border-radius: 8px;
+    color: #FAB387;
+    margin: 15px;
+}
+
+
+
+
+.app img {
+    width: 64px;
+    height: 64px;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: var(--footer-bg);
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Light mode specific styles */
+.light-mode header {
+    background-color: var(--light-bg);
+    color: var(--light-fg);
+}
+
+.light-mode header .logo {
+    color: var(--light-fg);
+}
+
+.light-mode header nav ul li a,
+.light-mode header nav ul li button {
+    color: var(--light-fg);
+}
+
+.light-mode header nav ul li button {
+    background-color: var(--button-bg);
+}
+
+.light-mode header nav ul li a:hover,
+.light-mode header nav ul li button:hover {
+    background-color: var(--light-accent);
+    color: var(--light-bg);
+}
+
+.light-mode .intro, .light-mode #sobre, .light-mode #documentacao {
+    color: var(--light-fg);
+}
+
+.light-mode h1, .light-mode h2 {
+    color: var(--light-primary);
+}
+
+.light-mode .app {
+    background-color: var(--light-bg);
+    color: var(--light-fg);
+}
+
+.light-mode footer {
+    background-color: var(--light-bg);
+    color: var(--light-fg);
+}
+
