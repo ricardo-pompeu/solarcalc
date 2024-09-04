@@ -5,145 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solar Calc</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="src/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="src/favicon.ico" type="image/x-icon">
+      
+      
+      
+      
+      
 </head>
 <body>
+    <div class="container">
+      <div class="bar">
     
-  <header>
-        <div class="header-container">
-            <h1>Solar Calc</h1>
-            
-          
-          <nav>
-                <button class="menu-btn"> <i data-lucide="menu"></i> </button>
-          </nav>
-<script src="https://unpkg.com/lucide@latest"></script>
-<script>
-lucide.createIcons();
-</script>
-          
-          
+    
+<a class="aa" href="https://www.linkedin.com/in/ricardopompeu08/" target="_blank"> <i data-lucide="circle-user-round"modo> </i> Ricardo Pompeu </a>
+<a class="aa" href="https://www.gov.br/planalto/pt-br/agenda-internacional/missoes-internacionais/cop28/cop-30-no-brasil" target="_blank"> <i data-lucide="shrub"modo> </i> COP 30 </a>
+        
+        
       </div>
-    </header>
-    
-  
-  
-  <main>
-        
       
-      <section class="image-section">
-            <img src="src/Retro Vintage Surf Wallpaper Mural - Hovia.jpg" alt="Sunset Cityscape">
-      </section>
-          
-          
+      <div class="bar2">
+        <img src="src/favicon.png" alt="img1" width="80" height="80">
+        <h1>Orçamento de Energia Solar</h1>
         
-      <section class="info-section">
-            
+      </div>
         
-        
-        
-        <div class="info-card">
-          
-          <div2>
-                <img src="src/piggy-bank.svg" alt="pig">
-                <h2>Orçamento</h2>
-          </div2>
-                
-            <p>Esses tópicos cobrem uma ampla gama de informações e funcionalidades que podem atrair e ajudar seus usuários.</p>
-           
-        </div>
-          
-          
-          
-          <div class="info-card">
-          
-          <div2>
-                <img src="src/cloud-sun.svg" alt="cloud">
-                <h2>Meteorologia</h2>
-          </div2>
-                
-            <p>Esses tópicos cobrem uma ampla gama de informações e funcionalidades que podem atrair e ajudar seus usuários.</p>
-           
-        </div>
-            
-        
-        
-        
-            <div class="info-card">
-          
-          <div2>
-                <img src="src/circle-dollar.svg" alt="dollar">
-                <h2>Economia</h2>
-          </div2>
-                
-            <p>Esses tópicos cobrem uma ampla gama de informações e funcionalidades que podem atrair e ajudar.</p>
-           
-        </div>    
-            
-              
-              <div class="info-card">
-          
-          <div2>
-                <img src="src/bell-ring.svg" alt="bell">
-                <h2>Notícias</h2>
-          </div2>
-                
-            <p>Esses tópicos cobrem uma ampla gama de informações e funcionalidades que podem atrair e ajudar seus usuários.</p>
-           
-        </div>
-              
-              
-            
-            
-              <div class="info-card">
-          
-          <div2>
-                <img src="src/circle-help.svg" alt="help">
-                <h2>Perguntas</h2>
-          </div2>
-                
-            <p>Esses tópicos cobrem uma ampla gama de informações e funcionalidades que podem atrair e ajudar seus usuários.</p>
-           
-        </div>
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-  
-        </section>
-    </main>
-    
-        <aside class="sidebar">
-        <div class="sidebar-content">
-            <ul>
-                <li> <a href="https://catppuccin.com/palette">  <i data-lucide="eclipse"></i> Contraste </a>  </li>
-                <li> <a href="https://catppuccin.com/palette">  <i data-lucide="message-circle-more"></i> Mensagens </a> </li>
-                <li> <a href="https://catppuccin.com/palette">  <i data-lucide="layers"></i> Conteúdo </a> </li>
-                <li> <a href="https://catppuccin.com/palette">  <i data-lucide="github"></i> Projeto </a> </li>
-              
-            </ul>
-          <button class="close-btn">  <i data-lucide="x"></i>  </button>
-        </div>
-    </aside>
-              
-              
-<script src="https://unpkg.com/lucide@latest"></script>
+        <form id="solarForm">
+            <label for="consumoMensal"> <i data-lucide="house-plug"></i> Consumo Mensal (kWh):</label>
+            <input type="number" id="consumoMensal" name="consumoMensal" required>
+
+            <label for="irradSolar"> <i data-lucide="cloud-sun"></i> Irradiação Solar Média (kWh/m²):</label>
+            <input type="number" id="irradSolar" name="irradSolar" required>
+
+            <label for="potenciaPainel"> <i data-lucide="zap"></i> Potência do Painel (W):</label>
+            <input type="number" id="potenciaPainel" name="potenciaPainel" required>
+
+            <label for="precoPainel"> <i data-lucide="coins"></i> Preço por Painel (R$):</label>
+            <input type="number" id="precoPainel" name="precoPainel" required>
+
+            <label for="precoInversor"> <i data-lucide="cable"></i> Preço do Inversor (R$):</label>
+            <input type="number" id="precoInversor" name="precoInversor" required>
+
+            <label for="quantInversor"> <i data-lucide="copy-check"></i> Quantidade de Inversores:</label>
+            <input type="number" id="quantInversor" name="quantInversor" required>
+
+            <label for="maoDeObra"> <i data-lucide="biceps-flexed"></i> Custo de Mão de Obra (R$):</label>
+            <input type="number" id="maoDeObra" name="maoDeObra" required>
+
+            <label for="licencasTaxas"> <i data-lucide="utility-pole"></i> Custo de Cabos Elétricos (R$):</label>
+            <input type="number" id="licencasTaxas" name="licencasTaxas" required>
+
+            <button  type="button" onclick="calcularOrcamento()"> <i data-lucide="circle-dollar-sign"></i> Calcular Orçamento</button>
+        </form>
+       
+        <div id="resultado"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
 <script>
 lucide.createIcons();
 </script>
-    
               
-              
-              
-              <div class="overlay"></div>
-    <script src="script.js"></script>
 </body>
 </html>
-
