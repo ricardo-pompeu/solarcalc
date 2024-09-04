@@ -1,4 +1,4 @@
-# Solar-Prize
+# Solar-Calc
 
 Calculadora de Energia Solar
 
